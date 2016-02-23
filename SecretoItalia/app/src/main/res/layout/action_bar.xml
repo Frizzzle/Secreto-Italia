@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/action_bar_size"
+        android:gravity="center"
+        android:baselineAligned="false"
+        android:divider="@color/accent_material_light"
+        android:background="@drawable/background_with_shadow">
+
+        <LinearLayout
+            android:id="@+id/show_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:longClickable="true"
+            android:layout_weight="0.85">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="false"
+                android:src="@mipmap/menu_icon"
+                android:layout_margin="10dp"
+                android:id="@+id/menuIcon" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/appTitle"
+            android:layout_weight="0.21"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:paddingRight="25dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:clickable="false" />
+
+        <LinearLayout
+            android:id="@+id/showBag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:longClickable="true"
+            android:layout_weight="0.85"
+            android:layout_marginRight="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="false"
+                    android:id="@+id/showBagImage"
+                    android:layout_weight="0.3"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginBottom="9dp"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="10"
+                    android:id="@+id/bagCountText"
+                    android:layout_weight="0.7"
+                    android:layout_gravity="bottom"
+                    android:textColor="@android:color/black"
+                    android:layout_alignTop="@+id/showBagImage"
+                    android:layout_alignBottom="@+id/showBagImage"
+                    android:layout_alignLeft="@+id/showBagImage"
+                    android:layout_alignRight="@+id/showBagImage"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textSize="12dp"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_centerInParent="true"
+                    android:paddingTop="6dp"
+                    android:paddingRight="2dp"
+                    android:visibility="invisible"
+                    android:layout_margin="2dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

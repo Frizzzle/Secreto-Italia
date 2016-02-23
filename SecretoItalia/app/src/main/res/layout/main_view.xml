@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        layout="@layout/action_bar"
+        android:id="@+id/include"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemsList"
+        android:layout_gravity="center_horizontal"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"
+        android:longClickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/internetConnection"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:text="No Internet Connection.\n All items will be refreshed after device will connect to the Internet."
+        android:gravity="center_vertical|center_horizontal" />
+
+</LinearLayout>

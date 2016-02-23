@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in with Facebook to continue"
+        android:id="@+id/textView19"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:id="@+id/button3"
+        android:background="@drawable/fblogin"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView19"
+        android:layout_alignRight="@+id/textView19"
+        android:layout_alignEnd="@+id/textView19"
+        android:layout_alignLeft="@+id/textView19"
+        android:layout_alignStart="@+id/textView19"
+        android:onClick="onLoginClick" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/joinWithEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:background="@android:color/darker_gray">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Have no account?\nSign Up now"
+            android:id="@+id/textView20"
+            android:textColor="@android:color/black"
+            android:textSize="18dp"
+            android:layout_gravity="center_horizontal|top"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:clickable="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--OR--"
+        android:id="@+id/textView17"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Address"
+        android:id="@+id/textView22"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:layout_below="@+id/textView17"
+        android:layout_alignLeft="@+id/email"
+        android:layout_alignStart="@+id/email"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/email"
+        android:layout_below="@+id/textView22"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:id="@+id/textView23"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/textView22"
+        android:layout_alignStart="@+id/email"
+        android:layout_below="@+id/email" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/pasword"
+        android:layout_alignStart="@+id/textView23"
+        android:inputType="textPassword"
+        android:layout_below="@+id/textView23"
+        android:hint="Password"
+        android:layout_alignLeft="@+id/textView22"
+        android:layout_alignRight="@+id/email" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Sign In"
+        android:id="@+id/joinWithEmail"
+        android:layout_below="@+id/pasword"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bluebutton"
+        android:layout_marginTop="20dp"
+        android:clickable="false" />
+
+</RelativeLayout>

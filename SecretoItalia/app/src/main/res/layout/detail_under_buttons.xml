@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d8d8d8">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALL TO ORDER"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/callToOrder"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:src="@drawable/call"
+        android:onClick="onClick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELIVERY"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18dp"
+        android:layout_below="@+id/callToOrder"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="We deliver anywhere in Cyprus using the courier services of Akis Express. We send your order in 24 hours"
+        android:id="@+id/textView4"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:layout_below="@+id/textView3"
+        android:layout_marginBottom="15dp"
+        android:background="#e1f4f4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRODUCT CHANGE POLICY"
+        android:id="@+id/textView5"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18dp"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read Policy"
+        android:id="@+id/policyButton"
+        android:textAllCaps="false"
+        android:background="@drawable/bluebutton"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:onClick="onClick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIZE GUIDE"
+        android:id="@+id/textView6"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18dp"
+        android:layout_below="@+id/policyButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read Size Guide"
+        android:id="@+id/guideButton"
+        android:textAllCaps="false"
+        android:background="@drawable/bluebutton"
+        android:onClick="onClick"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/guideButton"></LinearLayout>
+</RelativeLayout>

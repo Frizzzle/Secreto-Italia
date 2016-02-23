@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/action_bar"
+        android:id="@+id/joingInclude" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join SECRETO ITALIA"
+        android:id="@+id/textView19"
+        android:layout_marginTop="60dp"
+        android:textColor="@android:color/black"
+        android:textSize="24dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:id="@+id/button3"
+        android:background="@drawable/fblogin"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView19"
+        android:onClick="onLoginClick"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/joinWithEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:background="@android:color/darker_gray">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By creating an account you agree on our \nTerms and condition"
+            android:id="@+id/textView20"
+            android:textColor="@android:color/black"
+            android:textSize="18dp"
+            android:layout_gravity="center_horizontal|top"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:clickable="true" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join with email"
+        android:id="@+id/joinWithEmail"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bluebutton"
+        android:layout_marginTop="25dp"
+        android:clickable="false"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/textView24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We wan&apos;t share anything without your permission"
+        android:id="@+id/textView24"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:gravity="center" />
+
+</RelativeLayout>
